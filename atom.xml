@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
-  
+  <title>Your Title</title>
+  <icon>https://www.gravatar.com/avatar/16f508028f538a051a5505f0b334a04c</icon>
+  <subtitle>This is hexo theme</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://yoursite-url/"/>
   <updated>2018-04-15T06:24:38.203Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://yoursite-url/</id>
   
   <author>
     <name>John Doe</name>
-    
+    <email>lov3bugs@gmail.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
     <title>handlog</title>
-    <link href="http://yoursite.com/2018/04/15/handlog/"/>
-    <id>http://yoursite.com/2018/04/15/handlog/</id>
+    <link href="http://yoursite-url/2018/04/15/handlog/"/>
+    <id>http://yoursite-url/2018/04/15/handlog/</id>
     <published>2018-04-15T06:03:30.000Z</published>
     <updated>2018-04-15T06:24:38.203Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/04/15/hello-world/"/>
-    <id>http://yoursite.com/2018/04/15/hello-world/</id>
+    <link href="http://yoursite-url/2018/04/15/hello-world/"/>
+    <id>http://yoursite-url/2018/04/15/hello-world/</id>
     <published>2018-04-15T06:00:26.272Z</published>
     <updated>2018-04-15T06:31:14.843Z</updated>
     
