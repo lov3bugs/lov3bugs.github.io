@@ -5,16 +5,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/ironman-draw.png">
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="江攀" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-          About - Pan | 江攀
+        About｜Pan | 江攀
         
     </title>
 
@@ -23,87 +27,24 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-    <!-- Custom CSS --> 
-    <link rel="stylesheet" href="/css/beantech.min.css">
-    
-    <!-- Pygments Highlight CSS -->
-    <link rel="stylesheet" href="/css/highlight.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
 
-    <link rel="stylesheet" href="/css/widget.css">
-
-    <link rel="stylesheet" href="/css/rocket.css">
-
-    <link rel="stylesheet" href="/css/signature.css">
-
-    <link rel="stylesheet" href="/css/toc.css">
-
-    <!-- Custom Fonts -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
-    <!-- Hux Delete, sad but pending in China
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
-    css'>
-    -->
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- ga & ba script hoook -->
-    <script></script>
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 </head>
 
+<style>
 
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="">
-	<!-- Modified by Yu-Hsuan Yen -->
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header{
-        
-            background-image: url('/img/header_img/Iron-Man-3.jpg')
-            /*page*/
-        
+    header.intro-header {
+        background-image: url('img/header_img/home-bg-2-dark.png')
     }
-    
-    #signature{
-        background-image: url('/img/signature/BeanTechSign-white.png');
-    }
-    
 </style>
-
-<header class="intro-header" >
-    <!-- Signature -->
-    <div id="signature">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                    <div class="site-heading">
-                        <h1>About</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading">Wish for the Best, Prepare for the Worst</span>
-                    </div>
-                
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-	
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+" data-ishome = "false" >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -113,7 +54,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">江攀</a>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    江攀
+                </span>
+                's Blog
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -122,43 +68,46 @@
             so, when navbar scale out, the <nav> will cover tags.
             also mask any touch event of tags, unfortunately.
         -->
+        <!-- /.navbar-collapse -->
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-
+					
                     
-
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
                         
                     
-
                         
+							
                         <li>
                             <a href="/about/">About</a>
                         </li>
-                        
+							
+						
                     
-
                         
+							
                         <li>
                             <a href="/tags/">Tags</a>
                         </li>
+							
+						
+                    
                         
+							
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+							
+						
                     
-                    
+					
+					
                 </ul>
             </div>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
@@ -166,7 +115,7 @@
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
-    var $body   = document.body;
+//    var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
@@ -191,195 +140,136 @@
     }
 </script>
 
+<!-- Main Content -->
 
-    <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+<style>
+    #about-header{
+        margin-top: 85px;
+    }
+    #about-header img{
+        width: 145px;
+    }
+    .offer-body,
+    .person-body,
+    .project-body,
+    .skills-body,
+    .work-body,
+    .learn-body{
+        padding-left: 25px;
+    }
+    p{
+        margin:0;
+        font-size: 15px;
+    }
+    .body-section{
+        padding-left: 15px;
+    }
+    #offer ul{
+        margin-left: 20px;
+        margin-bottom: 5px!important;
+        border-left: 4px darkgray solid;
+        padding-left: 8px;
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <blockquote>
-<p>光有好奇心而不去實踐，等於自願放棄成功機會<br>別為自己畫地自限，Just Do It！！</p>
-</blockquote>
+    }
+    li{
+        list-style: none;
+        font-size: 15px;
+
+    }
+    .title{
+        color: #777;
+    }
+    .title>span{margin-right: 5px}
+    .detail-info-xueli{
+        display: block;
+        padding-left: 70px;
+    }
 
 
-                <!-- 如果开启评论功能 -->
-                
-                    <hr>
+</style>
 
-                    
-
-                    
-                    <!-- disqus 评论框 start -->
-                    <div class="comment">
-                        <div id="disqus_thread" class="disqus-thread"></div>
-                    </div>
-                    <!-- disqus 评论框 end -->
-                    
-
-
-                    
-
-                    
-                    <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-                    <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES * * */
-                        var disqus_shortname = "your-disqus-ID";
-                        var disqus_identifier = "http://yoursite-url/about/index.html";
-                        var disqus_url = "http://yoursite-url/about/index.html";
-
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-
-                        
-                    </script>
-                    <!-- disqus 公共JS代码 end -->
-                    
-                
+<!-- Chinese Version -->
+<div class="zh post-container">
+<    <div class="content" id="about-header"> 
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+                <div>
+                    <img  src="http://o7bkkhiex.bkt.clouddn.com/%E9%A9%AC%E6%B5%A9%E7%8F%8D-min.jpg"  style="border-radius: 50%;"/>
+                </div>
+                <div class="text-center">
+                     <h2>马浩珍/男/23岁</h2>
+                    <p>意向职位：Web前端开发工程师</p>
+                </div>
             </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-    <div class="tags">
-        
-    </div>
-</section>
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
-
-        
-            <img id = "avatar_pic" src="/img/ironman-draw.png" />
-        
-
-        
-            <p>Hi, i&#39;m John Doe</p>
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
-
-            
-
-            
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/江攀">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/lov3bugs">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-            
-            
-            
-                <li>
-                    <a target="_blank"  href="https://www.linkedin.com/in/江攀">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
-</section>
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/2018/04/15/handlog/">handlog</a>
-        </li>
-      
-        <li>
-          <a href="/2018/04/15/hello-world/">Hello World</a>
-        </li>
-      
-    </ul>
-  </div>
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5>FRIENDS</h5>
-<ul class="list-inline">
-
-    
-        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-    
-        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
-    
-        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-    
-        <li><a href="#" target="_blank">It Helps SEO</a></li>
-    
-</ul>
-
-        <hr>
-    
-</div>
-
-        
-    </div>
+        </div>
+        <!--正文-->
+        <div class="row" id="offer">
+            <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+                <div class="work-experience">
+                    <h3 class="title"> 工作经历</h3>
+                    <p>
+                        2016年7月-2017年6月, 在校园自媒体公司任前端开发职务
+                    </p>
+                    <div class="body-section">
+                        <ul>
+                            <li>1. 使用 ES6 + Vue + Bulma + webpack, 参与官网后台的开发</li>
+                            <li>2. 独立负责开发一款面向校园查询成绩课标的微信小程序, 在开发的过程中最棘手的问题是解决 iOS 与 Android 平台微信内因不同的渲染引擎导致的排版错误, 和使用第三方 Labrador 框架解决前期小程序无法优雅的组件化的问题</li>
+                            <li>3. 使用 jQuery + Bootstrap 编写和维护官网首页</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-show">
+                    <h3 class="title"><span class="glyphicon glyphicon-folder-open"></span> Project</h3>
+                    <div class="project-body">
+                        <ul>
+                            <li>为一款 Node.js 博客系统开发的两款主题:<a href="https://github.com/Haojen/hexo-theme-Anisina" target="_blank"> Anisina</a> 与 <a href="https://github.com/Haojen/hexo-theme-Anisina" target="_blank">Claudia</a></li>
+                            <li><a href="https://github.com/Haojen/alfred-Parrot" target="_blank"> 一款支持多语种的 Alfred Workflow 翻译插件</a></li>
+                            <li> <a href="http://haojen.github.io/my-works/" target="_blank">更早期的项目<span class="glyphicon glyphicon-link"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="person-info">
+                    <h3 class="title"><span class="glyphicon glyphicon-user"></span> 其他</h3>
+                    <div class="person-body">
+                        <p>学历: 初中</p>
+                        <p>个人博客: <a target="_blank" href="http://haojen.github.io/"> haojen.github.io <span class="glyphicon glyphicon-link"></span> </a></p>
+                        <p>GitHub: <a target="_blank" href="http://github.com/haojen">http://github.com/haojen <span class="glyphicon glyphicon-link"></span></a></p>
+                        <p>爱好: 单片机,硬件,健身</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="title">正在深入学习的</h3>
+                    <ul>
+                        <li>Vue 组件化</li>
+                        <li>React Native</li>
+                        <li>Webpack</li>
+                        <li>ES6/7 新特性</li>
+                    </ul>
+                </div>
+                <div class="contact-show">
+                    <h3 class="title "> <span class="glyphicon glyphicon-earphone"></span> 联系我</h3>
+                        <p>
+                            电 &nbsp; &nbsp; &nbsp; 话: 15175758087
+                        </p>
+                        <p>
+                            邮 &nbsp; &nbsp; &nbsp; 箱: haojen.ma@gmail.com
+                        </p>
+                </div>
+            </div>
+        </div></div>
 </div>
 
 
-    <!-- Footer -->
-    <!-- Footer -->
+
+
+
+<!-- Footer -->
+<!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
                 <ul class="list-inline text-center">
                 
                 
@@ -422,19 +312,13 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 江攀 2018 
+                    Copyright &copy; 江攀 2018
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> 
-                    <span style="display: inline-block; margin: 0 5px;">
-                        <i class="fa fa-heart"></i>
-                    </span> 
-                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
-                    </iframe>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
                 </p>
+
             </div>
         </div>
     </div>
@@ -447,8 +331,7 @@
 <script src="/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js"></script>
-
+<script src="/js/blog.js"></script>
 
 <!-- async load function -->
 <script>
@@ -461,25 +344,6 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
-
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
-     so Huxblog drops it officially.
-
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
--->
-<!--
-    <script>
-        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
-            hljs.initHighlightingOnLoad();
-        })
-    </script>
-    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
--->
-
 
 <!-- jquery.tagcloud.js -->
 <script>
@@ -497,12 +361,11 @@
 
 <!--fastClick.js -->
 <script>
-    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
 </script>
-
 
 <!-- Google Analytics -->
 
@@ -511,34 +374,33 @@
     // dynamic User by Hux
     var _gaId = 'UA-XXXXXXXX-X';
     var _gaDomain = 'yoursite';
-
     // Originial
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', _gaId, _gaDomain);
     ga('send', 'pageview');
 </script>
 
 
-
-
 <!-- Baidu Tongji -->
 
 
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
+  _st('install','','2.0.0');
+</script>
 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-
-	<a id="rocket" href="#top" class=""></a>
-	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
-    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
-<!-- Image to hack wechat -->
-<img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
+<!--wechat title img-->
+<img class="wechat-title-img" src="img/ironman-draw.png">
 </body>
 
 </html>
