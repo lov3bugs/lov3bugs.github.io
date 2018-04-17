@@ -32,7 +32,7 @@ after_script:
 
 branches:
   only:
-    - master  #只监测master分支，master是我的分支的名称，可根据自己情况设置
+    - hexo  #只监测master分支，master是我的分支的名称，可根据自己情况设置
 env:
  global:
    - GH_REF: github.com/mtianyan/lov3bugs.github.io.git  #设置GH_REF，注意更改yourname
