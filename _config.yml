@@ -80,6 +80,7 @@ theme: next
 deploy:
   type: git
   repo: lov3bugs@github.com:lov3bugs/lov3bugs.github.io.git
+  branch: master
 
 # Custom Config
 # Menu configuration.
