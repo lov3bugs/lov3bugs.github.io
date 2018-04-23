@@ -16,7 +16,7 @@ install:
 script:
   - hexo clean  #清除
   - hexo g  #生成
-  - sudo hexo d
+  - hexo d
 
 after_script:
   - git clone https://${GH_REF} .deploy_git  # GH_REF是最下面配置的仓库地址
@@ -33,16 +33,17 @@ after_script:
 
 branches:
   only:
-    - hexo  #只监测hexo分支，hexo是分支的名称，可根据自己情况设置
+    - hexo  #只监测master分支，master是我的分支的名称，可根据自己情况设置
 env:
  global:
    - GH_REF: github.com/lov3bugs/lov3bugs.github.io.git  #设置GH_REF，注意更改yourname
-
+   
 # configure notifications (email, IRC, campfire etc)
 # please update this section to your needs!
 # https://docs.travis-ci.com/user/notifications/
 notifications:
   email:
+    - ggdebug@gmail.com
     - mlgbmlgb@outlook.com
   on_success: change
   on_failure: always
