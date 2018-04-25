@@ -278,6 +278,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/ideas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="江攀">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/25/ideas/" itemprop="url">工作总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-25T00:00:00+08:00">
+                2018-04-25
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
+                2018-04-25
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="软件测试的艺术"><a href="#软件测试的艺术" class="headerlink" title="软件测试的艺术"></a>软件测试的艺术</h2><hr>
+<h3 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h3><ul>
+<li>黑盒测试的基础，是数据驱动，因此设计测试Case最基本的，就是有一条完整的数据流。<blockquote>
+<p>比如用户注册，准备的数据有手机号和邀请码。输入到验证、保存，再到注册成功进行登录。</p>
+</blockquote>
+</li>
+</ul>
+<p>这个例子是一个比较宏观层面的数据流，也可以深入到比较微观的层面。</p>
+<blockquote>
+<p>像前后端的交互，每一个接口是一个数据流，每一个key-value也是一个数据流。前端本身也有也有自己的变量数据</p>
+</blockquote>
+<p>同理，测试Case中的异常流，其实也可以从数据入手。</p>
+<blockquote>
+<p>接上一个例子，异常流主要考虑的几点就是：手机号、短信（图片）验证码、邀请码。这些数据的不同组合就构成了测试Case。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/世界观/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -325,7 +471,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -487,7 +633,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -620,7 +766,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -753,7 +899,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -801,10 +947,17 @@
 <li>hexo分支存放hexo环境文件</li>
 </ul>
 <ol start="2">
-<li><p>生成一个access_token，提供给Travis push静态文件到master</p>
-</li>
+<li>生成access_token以供Travis部署到Github</li>
+</ol>
+<ul>
+<li>在Github生成一个access_token</li>
+<li>在Travis里面设置变量GH_TOKEN（然后在下面会用到）</li>
+</ul>
+<ol start="3">
 <li><p>hexo分支搭建，添加.travis.yml文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">language: node_js  #设置语言</span><br><span class="line"></span><br><span class="line">node_js: stable  #设置相应的版本</span><br><span class="line"></span><br><span class="line">cache:</span><br><span class="line">    apt: true</span><br><span class="line">    directories:</span><br><span class="line">        - node_modules # 缓存不经常更改的内容</span><br><span class="line"></span><br><span class="line">before_install:</span><br><span class="line">    - export TZ=&apos;Asia/Shanghai&apos; # 更改时区</span><br><span class="line"></span><br><span class="line">install:</span><br><span class="line">  - npm install  #安装hexo及插件</span><br><span class="line"></span><br><span class="line">script:</span><br><span class="line">  - hexo clean  #清除</span><br><span class="line">  - hexo g  #生成</span><br><span class="line"></span><br><span class="line">after_script:</span><br><span class="line">  - git clone https://$&#123;GH_REF&#125; .deploy_git  # GH_REF是最下面配置的仓库地址</span><br><span class="line">  - cd .deploy_git</span><br><span class="line">  - git checkout master</span><br><span class="line">  - cd ../</span><br><span class="line">  - mv .deploy_git/.git/ ./public/   # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit</span><br><span class="line">  - cd ./public</span><br><span class="line">  - git config user.name &quot;lov3bugs&quot;  #修改name</span><br><span class="line">  - git config user.email &quot;ggdebug@gmail.com&quot;  #修改email</span><br><span class="line">  - git add .</span><br><span class="line">  - git commit -m &quot;Travis CI Auto Builder at `date +&quot;%Y-%m-%d %H:%M&quot;`&quot;  # 提交记录包含时间 跟上面更改时区配合</span><br><span class="line">  - git push --force --quiet &quot;https://$&#123;GH_TOKEN&#125;@$&#123;GH_REF&#125;&quot; master:master  #GH_Token是在Travis中配置环境变量的名称</span><br><span class="line"></span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">    - hexo  #只监测hexo分支，根据自己情况设置</span><br><span class="line">env:</span><br><span class="line"> global:</span><br><span class="line">   - GH_REF: github.com/lov3bugs/lov3bugs.github.io.git  #设置GH_REF，注意更改yourname</span><br><span class="line"></span><br><span class="line"># configure notifications (email, IRC, campfire etc)</span><br><span class="line"># please update this section to your needs!</span><br><span class="line"># https://docs.travis-ci.com/user/notifications/</span><br><span class="line">notifications:</span><br><span class="line">  email:</span><br><span class="line">    - ggdebug@gmail.com</span><br><span class="line">  on_success: change</span><br><span class="line">  on_failure: always</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地clone hexo分支，在_posts下面编辑md文档，然后push到hexo分支即可</p>
 </li>
 </ol>
 
@@ -902,7 +1055,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -1100,7 +1253,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -1137,21 +1290,44 @@
         
           
             <h2 id="2018-04"><a href="#2018-04" class="headerlink" title="2018-04"></a>2018-04</h2><hr>
-<h3 id="2018-04-25"><a href="#2018-04-25" class="headerlink" title="2018-04-25"></a>2018-04-25</h3><ol>
-<li><p>Test新题型项目回归测试</p>
-</li>
-<li><p>Staging新题型项目测试</p>
-</li>
-<li><p>Xmind迁移到HexoBlog</p>
-</li>
+<h3 id="2018-04-26"><a href="#2018-04-26" class="headerlink" title="2018-04-26"></a>2018-04-26</h3><ol>
+<li>学生APP代码merge到master</li>
 </ol>
+<p>2.</p>
+<hr>
+<h3 id="2018-04-25"><a href="#2018-04-25" class="headerlink" title="2018-04-25"></a>2018-04-25</h3><ol>
+<li>Test新题型项目回归测试</li>
+</ol>
+<ul>
+<li>讲师布置套题-所有题型套题</li>
+<li>讲师布置统一作业</li>
+<li>学生提交作业</li>
+<li>学生完成订正</li>
+<li>学生强化练习</li>
+<li>学生错题本复习/练习</li>
+<li>讲师查看班级完成情况</li>
+<li>讲师查看学生完成情况</li>
+</ul>
+<ol start="2">
+<li>Staging新题型项目测试</li>
+</ol>
+<ul>
+<li>UBJ未部署</li>
+<li>学生APP代码什么时候merge到master</li>
+</ul>
+<ol start="3">
+<li>Onedrive部分文档迁移到HexoBlog</li>
+</ol>
+<ul>
+<li>个人总结</li>
+</ul>
 <hr>
 <h3 id="2018-04-24"><a href="#2018-04-24" class="headerlink" title="2018-04-24"></a>2018-04-24</h3><ol>
 <li>Test新题型项目测试</li>
 </ol>
 <ul>
 <li>问题<blockquote>
-<p>讲师APP 套题列表 选择单元进度点击无响应 y<br>讲师APP 新题型题目列表页&amp;详情页面展示 n<br>！讲师APP 预览购物车的视频听力题，列表上不能点击查看视频题，但是可以播放视频 n<br>讲师APP 选择题目详情页面 右上角加入按钮无响应 n<br>讲师APP 统一作业选择知识点 全选/取消全选 显示样式 n<br>讲师APP 选择题目列表页面 同时播放多个视频 n<br>讲师APP 统一作业 未选单元可以点击确定 抽题接口报错</p>
+<p>讲师APP 套题列表 选择单元进度点击无响应 y<br>讲师APP 新题型题目列表页&amp;详情页面展示 n y<br>！讲师APP 预览购物车的视频听力题，列表上不能点击查看视频题，但是可以播放视频 n<br>讲师APP 选择题目详情页面 右上角加入按钮无响应 n y<br>讲师APP 统一作业选择知识点 全选/取消全选 显示样式 n y<br>讲师APP 选择题目列表页面 同时播放多个视频 n<br>讲师APP 统一作业 未选单元可以点击确定 抽题接口报错</p>
 </blockquote>
 </li>
 </ul>
@@ -1497,7 +1673,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T13:32:51+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-25T17:33:47+08:00">
                 2018-04-25
               </time>
             
@@ -1627,7 +1803,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
