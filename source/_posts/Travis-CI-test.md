@@ -13,7 +13,9 @@ tags: CI
 * master分支存放静态文件
 * hexo分支存放hexo环境文件
 
-2. 生成一个access_token，提供给Travis push静态文件到master
+2. 生成access_token以供Travis部署到Github
+* 在Github生成一个access_token
+* 在Travis里面设置变量GH_TOKEN（然后在下面会用到）
 
 3. hexo分支搭建，添加.travis.yml文件
 ```
@@ -65,3 +67,4 @@ notifications:
   on_success: change
   on_failure: always
 ```
+4. 本地clone hexo分支，在_posts下面编辑md文档，然后push到hexo分支即可
