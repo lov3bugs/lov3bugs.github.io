@@ -325,7 +325,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -389,6 +389,23 @@
 </li>
 <li><p>由此联想到，如果要说服某个人，或者当众发布演说、讲解PPT等，那么在你的头脑中一定先要有一个中心地位的思想。然后再用一些表达技巧包装出来，比如金字塔原理、语言学的技法等等，这可谓是个人与社会进行信息交互的必备技能！</p>
 </li>
+</ul>
+<h4 id="MVC模型"><a href="#MVC模型" class="headerlink" title="MVC模型"></a>MVC模型</h4><ul>
+<li>Model模型，数据层</li>
+<li>View视图，展现层</li>
+<li>Controller控制，业务逻辑层</li>
+<li>目前接触到的软件开发，都是基于这个模型去设计和实现的。可以说，只有深刻理解了这个模型，才算是真正踏入了软件开发行业的大门。<blockquote>
+<p>第一个层面，我们的人员构成分为后端和前端，后端负责数据库、提供接口给前端并处理接口数据的输入输出，前端负责页面的展现并完成页面间的数据交互，这种分工合作就是数据-业务逻辑-展现的例证；<br>第二个层面，前后端的工程代码结构，也大致包括三个部分。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="Hard-Skills"><a href="#Hard-Skills" class="headerlink" title="Hard Skills"></a>Hard Skills</h4><ul>
+<li>SQL 查改删增</li>
+<li>Fiddler、Charles等抓包工具使用</li>
+<li>浏览器开发者工具</li>
+<li>文档编写，如Excel、Xmind写测试Case</li>
+<li>Jmeter基本、进阶使用</li>
+<li>Python</li>
 </ul>
 
           
@@ -485,7 +502,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -673,7 +690,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -806,7 +823,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -939,7 +956,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -1095,7 +1112,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -1293,7 +1310,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -1433,7 +1450,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -1473,10 +1490,16 @@
 <h3 id="2018-04-28"><a href="#2018-04-28" class="headerlink" title="2018-04-28"></a>2018-04-28</h3><ol>
 <li><p>Staging学生新题型作答的不同场景</p>
 </li>
-<li><p>讲师APP交互逻辑</p>
+<li><p>讲师端 交互优化</p>
+<ul>
+<li>新题型抽题排序，抽到的题目是普通词汇语法未作排序（根据多个知识点的每个一题进行排序）</li>
+<li>预览套题-题目详情页面加入购物车 报错；统一作业加题的列表和详情页 加入购物车也报错</li>
+<li>讲师APP作业列表，上拉翻页，结果只展示下一页的内容</li>
+<li>讲师作业列表 PC跟APP的接口分开，PC支持查全部班级的作业，APP只查单个班级</li>
+</ul>
 </li>
 <li><p>日程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11-12:</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">11-12: 准备抽题数据，加题时能抽出新题型的数据</span><br><span class="line">14-15：抽题交互验证</span><br><span class="line">15-16：回归讲师APP BUG</span><br><span class="line">16-17：讲师APP 交互</span><br><span class="line">17-19：回归讲师APP BUG</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <hr>

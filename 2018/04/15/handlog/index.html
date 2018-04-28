@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="2018-04 2018-04-28 Staging学生新题型作答的不同场景  讲师APP交互逻辑  日程 111-12:    2018-04-27 确认staging布置新题型，学生launch数据为空的BUG  Staging新题型项目测试    讲师布置作业，学生都可以正常打开 订正也正常打开，可继续订正直到全对 讲师不能查看新题型的作业完成情况，个人和班级都不行   日程12345610">
+<meta name="description" content="2018-04 2018-04-28 Staging学生新题型作答的不同场景  讲师端 交互优化  新题型抽题排序，抽到的题目是普通词汇语法未作排序（根据多个知识点的每个一题进行排序） 预览套题-题目详情页面加入购物车 报错；统一作业加题的列表和详情页 加入购物车也报错 讲师APP作业列表，上拉翻页，结果只展示下一页的内容 讲师作业列表 PC跟APP的接口分开，PC支持查全部班级的作业，APP只查">
 <meta name="keywords" content="日记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HandLog">
 <meta property="og:url" content="http://yoursite.com/2018/04/15/handlog/index.html">
 <meta property="og:site_name" content="江攀">
-<meta property="og:description" content="2018-04 2018-04-28 Staging学生新题型作答的不同场景  讲师APP交互逻辑  日程 111-12:    2018-04-27 确认staging布置新题型，学生launch数据为空的BUG  Staging新题型项目测试    讲师布置作业，学生都可以正常打开 订正也正常打开，可继续订正直到全对 讲师不能查看新题型的作业完成情况，个人和班级都不行   日程12345610">
+<meta property="og:description" content="2018-04 2018-04-28 Staging学生新题型作答的不同场景  讲师端 交互优化  新题型抽题排序，抽到的题目是普通词汇语法未作排序（根据多个知识点的每个一题进行排序） 预览套题-题目详情页面加入购物车 报错；统一作业加题的列表和详情页 加入购物车也报错 讲师APP作业列表，上拉翻页，结果只展示下一页的内容 讲师作业列表 PC跟APP的接口分开，PC支持查全部班级的作业，APP只查">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-28T03:16:42.063Z">
+<meta property="og:updated_time" content="2018-04-28T11:16:51.322Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HandLog">
-<meta name="twitter:description" content="2018-04 2018-04-28 Staging学生新题型作答的不同场景  讲师APP交互逻辑  日程 111-12:    2018-04-27 确认staging布置新题型，学生launch数据为空的BUG  Staging新题型项目测试    讲师布置作业，学生都可以正常打开 订正也正常打开，可继续订正直到全对 讲师不能查看新题型的作业完成情况，个人和班级都不行   日程12345610">
+<meta name="twitter:description" content="2018-04 2018-04-28 Staging学生新题型作答的不同场景  讲师端 交互优化  新题型抽题排序，抽到的题目是普通词汇语法未作排序（根据多个知识点的每个一题进行排序） 预览套题-题目详情页面加入购物车 报错；统一作业加题的列表和详情页 加入购物车也报错 讲师APP作业列表，上拉翻页，结果只展示下一页的内容 讲师作业列表 PC跟APP的接口分开，PC支持查全部班级的作业，APP只查">
 
 
 
@@ -324,7 +324,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T11:16:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-04-28T19:16:51+08:00">
                 2018-04-28
               </time>
             
@@ -362,10 +362,16 @@
 <h3 id="2018-04-28"><a href="#2018-04-28" class="headerlink" title="2018-04-28"></a>2018-04-28</h3><ol>
 <li><p>Staging学生新题型作答的不同场景</p>
 </li>
-<li><p>讲师APP交互逻辑</p>
+<li><p>讲师端 交互优化</p>
+<ul>
+<li>新题型抽题排序，抽到的题目是普通词汇语法未作排序（根据多个知识点的每个一题进行排序）</li>
+<li>预览套题-题目详情页面加入购物车 报错；统一作业加题的列表和详情页 加入购物车也报错</li>
+<li>讲师APP作业列表，上拉翻页，结果只展示下一页的内容</li>
+<li>讲师作业列表 PC跟APP的接口分开，PC支持查全部班级的作业，APP只查单个班级</li>
+</ul>
 </li>
 <li><p>日程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11-12:</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">11-12: 准备抽题数据，加题时能抽出新题型的数据</span><br><span class="line">14-15：抽题交互验证</span><br><span class="line">15-16：回归讲师APP BUG</span><br><span class="line">16-17：讲师APP 交互</span><br><span class="line">17-19：回归讲师APP BUG</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <hr>
