@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="测试报告的结构、内容和注意事项">
+<meta name="description" content="工作间隙的一些想法，望滴水穿石…">
 <meta name="keywords" content="个人总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="怎么写测试报告？">
-<meta property="og:url" content="http://yoursite.com/2018/05/14/测试报告/index.html">
+<meta property="og:title" content="Some Ideas">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/个人总结_一些想法/index.html">
 <meta property="og:site_name" content="江攀">
-<meta property="og:description" content="测试报告的结构、内容和注意事项">
+<meta property="og:description" content="工作间隙的一些想法，望滴水穿石…">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-15T12:54:24.912Z">
+<meta property="og:updated_time" content="2018-05-15T16:19:23.240Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="怎么写测试报告？">
-<meta name="twitter:description" content="测试报告的结构、内容和注意事项">
+<meta name="twitter:title" content="Some Ideas">
+<meta name="twitter:description" content="工作间隙的一些想法，望滴水穿石…">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/14/测试报告/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/25/个人总结_一些想法/"/>
 
 
 
 
 
-  <title>怎么写测试报告？ | 江攀</title>
+  <title>Some Ideas | 江攀</title>
   
 
 
@@ -279,7 +279,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/14/测试报告/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/个人总结_一些想法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Pan">
@@ -296,7 +296,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">怎么写测试报告？</h1>
+          <h1 class="post-title" itemprop="name headline">Some Ideas</h1>
         
 
         <div class="post-meta">
@@ -308,8 +308,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-14T00:00:00+08:00">
-                2018-05-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-25T00:00:00+08:00">
+                2018-04-25
               </time>
             
 
@@ -324,8 +324,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-05-15T20:54:24+08:00">
-                2018-05-15
+              <time title="Post modified" itemprop="dateModified" datetime="2018-05-16T00:19:23+08:00">
+                2018-05-16
               </time>
             
           </span>
@@ -358,16 +358,142 @@
       
 
       
-        <p>测试报告的结构、内容和注意事项<br> <a id="more"></a></p>
-<h4 id="测试报告的结构"><a href="#测试报告的结构" class="headerlink" title="测试报告的结构"></a>测试报告的结构</h4><ol>
-<li>首页</li>
-<li>引言（目的、背景、参考文档）</li>
-<li>测试概要（方法、范围、环境、工具）</li>
-<li>测试结果和缺陷分析</li>
-<li>测试结论与建议</li>
-<li><p>附录（缺陷统计）</p>
-<h4 id="测试报告的内容格式"><a href="#测试报告的内容格式" class="headerlink" title="测试报告的内容格式"></a>测试报告的内容格式</h4><h4 id="问题与注意事项"><a href="#问题与注意事项" class="headerlink" title="问题与注意事项"></a>问题与注意事项</h4></li>
+        <p>工作间隙的一些想法，望滴水穿石…<br> <a id="more"></a></p>
+<h2 id="工作与艺术"><a href="#工作与艺术" class="headerlink" title="工作与艺术"></a>工作与艺术</h2><hr>
+<h3 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h3><h4 id="数据驱动"><a href="#数据驱动" class="headerlink" title="数据驱动"></a>数据驱动</h4><ul>
+<li><p>黑盒测试的基础，是数据驱动，因此设计测试Case最基本的，就是有一条完整的数据流。</p>
+<blockquote>
+<p>比如用户注册，准备的数据有手机号和邀请码。输入到验证、保存，再到注册成功进行登录。</p>
+</blockquote>
+</li>
+<li><p>上面这个例子是一个比较宏观层面的数据流，也可以深入到比较微观的层面。</p>
+<blockquote>
+<p>像前后端的交互，每一个接口是一个数据流，每一个key-value也是一个数据流。前端本身也有也有自己的变量数据</p>
+</blockquote>
+</li>
+<li><p>同理，测试Case中的异常流，其实也可以从数据入手。</p>
+<blockquote>
+<p>接上一个例子，异常流主要考虑的几点就是：手机号、短信（图片）验证码、邀请码。这些数据的不同组合就构成了测试Case。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a>中心思想</h4><ul>
+<li><p>在做任何事情都需要一个中心思想，这样才不会被打乱节奏。</p>
+<ul>
+<li>事情的计划阶段，总结提炼出一个中心，然后根据这个中心去安排计划。</li>
+<li>执行过程中，根据这个中心的主干走，否则很容易因为钻进某个分支，导致全盘计划全乱。</li>
+<li>执行完成后，如果因为中心思想存在缺陷，那么就需要总结经验教训。如果中心思想没什么问题，那么只需要将计划和执行中的细节继续打磨一下，就会更加完美。</li>
+</ul>
+</li>
+<li><p>由此联想到，如果要说服某个人，或者当众发布演说、讲解PPT等，那么在你的头脑中一定先要有一个中心地位的思想。然后再用一些表达技巧包装出来，比如金字塔原理、语言学的技法等等，这可谓是个人与社会进行信息交互的必备技能！</p>
+</li>
+</ul>
+<h4 id="MVC模型"><a href="#MVC模型" class="headerlink" title="MVC模型"></a>MVC模型</h4><ul>
+<li>Model模型，数据层</li>
+<li>View视图，展现层</li>
+<li>Controller控制，业务逻辑层</li>
+<li>目前接触到的软件开发，都是基于这个模型去设计和实现的。可以说，只有深刻理解了这个模型，才算是真正踏入了软件开发行业的大门。<blockquote>
+<p>第一个层面，我们的人员构成分为后端和前端，后端负责数据库、提供接口给前端并处理接口数据的输入输出，前端负责页面的展现并完成页面间的数据交互，这种分工合作就是数据-业务逻辑-展现的例证；<br>第二个层面，前后端的工程代码结构，也大致包括三个部分。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="Hard-Skills"><a href="#Hard-Skills" class="headerlink" title="Hard Skills"></a>Hard Skills</h4><ul>
+<li>SQL 查改删增</li>
+<li>Fiddler、Charles等抓包工具使用</li>
+<li>浏览器开发者工具</li>
+<li>文档编写，如Excel、Xmind写测试Case</li>
+<li>需求分析（业务逻辑、技术逻辑）</li>
+<li>测试设计&amp;测试CASE：快速写出一个可操作性的、全面的测试用例</li>
+<li>Jmeter基本、进阶使用</li>
+<li>Python</li>
+</ul>
+<h4 id="Soft-Skills"><a href="#Soft-Skills" class="headerlink" title="Soft Skills"></a>Soft Skills</h4><ul>
+<li>沟通能力，跟技术、产品、客服等沟通，一方面自己要明确产品的逻辑，另一方面也有能理解对方的语境。（用语境这个词是因为有时候，对方可能并没有逻辑，但终究是基于因果论的，他也有他的认知过程）</li>
+<li>情商</li>
+</ul>
+<h4 id="项目实战"><a href="#项目实战" class="headerlink" title="项目实战"></a>项目实战</h4><h5 id="讲师作业中心1-4"><a href="#讲师作业中心1-4" class="headerlink" title="讲师作业中心1.4"></a>讲师作业中心1.4</h5><p>项目周期：04-11 ～ 05～09<br>问题：</p>
+<ol>
+<li>项目开始初期的BUG量，不及项目后期的BUG量。<ul>
+<li>04-23之后BUG才开始大规模爆发</li>
+<li>05-01之后级别为1的BUG数量占了一半</li>
+</ul>
+</li>
+<li>项目上线过程，测试不全面。<ul>
+<li>上线时发现之前未测试到功能存在BUG</li>
+<li>上线过程的整体测试安排，上线必测的Case有哪些？</li>
+</ul>
+</li>
 </ol>
+<p>解释：</p>
+<ol>
+<li>流程测不通？还是测试Case设计&amp;执行计划需要改进？两种情况都会碰到，但对于测试人员来说，解决后者是核心。而且在这个项目中，还是明显感觉到提测的时候，流程是可以测通的。</li>
+<li>从数据和页面两个方面来看，主要是页面的跳转，测试Case没有细化到具体的页面交互；从上线时的验收测试来看，也没有可参照的文档，这样对人的要求较高，风险就很大。</li>
+</ol>
+<p>行动：</p>
+<ol>
+<li>项目启动时，需要准备测试Case，一个可用性较高的文档（包括整体的计划）</li>
+<li>还是测试Case的问题，如果项目开始时来不及细化，项目过程中是否有时间进行补充Case？另一方面上线是否需要专门准备一份测试Case？（对测试人员要求较高，在测试周期短且任务重的情况下）</li>
+</ol>
+<h5 id="词汇语法新题型"><a href="#词汇语法新题型" class="headerlink" title="词汇语法新题型"></a>词汇语法新题型</h5><p>项目周期：跟讲师作业中心1.4同期<br>问题：</p>
+<ol>
+<li>开发对业务不熟悉，很多地方的修改在测试之后才开始</li>
+<li>作业订正和错题本，新题型文章内容 需要回填学生已回答正确的答案，这个问题在项目开始时为什么没有提出来？</li>
+</ol>
+<p>解释：</p>
+<ol>
+<li>在这个项目，这里引发的问题倒不是特别严重</li>
+<li>对于用户体验地图的把握，不够敏感。</li>
+</ol>
+<p>行动：</p>
+<ol>
+<li>测试驱动，在产品没有明确定义的情况下，只有靠测试同学多努力了</li>
+<li>同时对用户体验地图和服务蓝图保持敏感！</li>
+</ol>
+<hr>
+<h3 id="服务设计"><a href="#服务设计" class="headerlink" title="服务设计"></a>服务设计</h3><h4 id="用户体验地图和服务蓝图"><a href="#用户体验地图和服务蓝图" class="headerlink" title="用户体验地图和服务蓝图"></a>用户体验地图和服务蓝图</h4><p>商业社会的一切，其背后都有一整套的业务流程为它们的发生创造条件。<br>绘制这些经历是以人为中心的商业模式的关键一环，而重要的是需要考虑这两个方面—-用户经历了什么，在他们的视野之外是什么促使它们发生。用户体验地图和服务蓝图是两个互补的方法，帮助我们看清楚我们的服务的两个方面。</p>
+<ul>
+<li>什么是用户体验地图<br>从用户的视角描述用户标志性的体验。描述用户在做什么、想什么、有什么感受，以及他们在整个过程中的互动。（核心是同理心）除了当前正在进行的体验，体验地图也可以被用于想象和展望未来。</li>
+<li>什么是服务蓝图<br>服务蓝图聚焦于有表面到核心的后台业务以及如何交付和操作的幕后，并且与用户体验联系起来。包括五个部分和它们之间的互动线，有形展示、顾客行为、前台行为、后台行为、支持过程。</li>
+</ul>
+<hr>
+<h2 id="心理学与生活"><a href="#心理学与生活" class="headerlink" title="心理学与生活"></a>心理学与生活</h2><hr>
+<h3 id="心理学教我的学习方法"><a href="#心理学教我的学习方法" class="headerlink" title="心理学教我的学习方法"></a>心理学教我的学习方法</h3><h4 id="学习策略"><a href="#学习策略" class="headerlink" title="学习策略"></a>学习策略</h4><ol>
+<li>足够多的阅读时间</li>
+<li>记录学习的时间，X轴为阅读时段，Y轴为学习时间累积，半小时为时间间隔</li>
+<li>积极参与，主动描述</li>
+<li>间隔性学习</li>
+<li>以学习为中心，找到一个只与学习关联的地方</li>
+</ol>
+<h4 id="学习技巧"><a href="#学习技巧" class="headerlink" title="学习技巧"></a>学习技巧</h4><ol start="0">
+<li>根据人类记忆的基本原则，PQ4R，有效学习的六个阶段。</li>
+<li>预习 结构和主题</li>
+<li>问题 帮助集中注意力</li>
+<li>阅读 解答问题</li>
+<li>思考 理论结合实践</li>
+<li>重述 尽可能详细地回忆上述内容</li>
+<li>复习 重复上面的阅读-思考-重述</li>
+</ol>
+<h3 id="心理学教我的批判思维"><a href="#心理学教我的批判思维" class="headerlink" title="心理学教我的批判思维"></a>心理学教我的批判思维</h3><ul>
+<li>避免把相关推论为因果</li>
+<li>要求关键术语和概念有操作性定义，并对其含义达成一致意见</li>
+<li>在寻找确定的证据之前，你首先要考虑如何反驳一个理论、假设或信念，因为找一个支持的理由是很容易的</li>
+<li>不要轻信他人提出看似明显的解释，要不断寻找其他可能的解释，尤其在已有的解释会给其提出者带来利益时</li>
+<li>警惕个人偏见如何歪曲对现实的认识</li>
+<li>要对复杂问题的简单答案以及复杂效应和问题的单一原因和方案保持怀疑</li>
+<li>对许多宣称有效的治疗、干预或产品保持质疑，找出其效应的对照基础：与什么对比？</li>
+<li>心智开放，还要保持怀疑态度：必须意识到，大多数结论是尝试性的、非确定的；寻找新证据以减少你的不确定感，同时对变化和修正保持开放态度</li>
+<li>挑战那些在做出结论时使用个人观点取代证据且不接受建设性批评的权威</li>
+</ul>
+<p>针对以上几点，重述一下：</p>
+<ul>
+<li>科学的研究需要对关键术语和概念进行操作性定义，而日常生活中经常没有进行严格的定义，容易因名词导致争论；</li>
+<li>推理是有前提条件的，这在科学上称之为假设，也就是说前提可能是假的</li>
+<li>科学的研究需要严格设置对照组、随机取样等等，以排除无关变量的影响，而现实生活往往参杂很多无关变量</li>
+<li>推理过程分归纳和演绎，有时候根据推理过程是否合理，可以判断出结果是否合理</li>
+<li>人的局限性会限制他的认知，导致推论出现偏差，比如观察者偏见</li>
+<li>一个小技巧是，列出一个支持的观点同时，再列出一个反对的观点，如果双方都能一直保持平衡，那就慢慢接近真理了？</li>
+<li>总而言之，就是要看名词定义是否具有操作性、假设是否合理、取样或者数据来源是否合理、推理过程是否合理、分析者有没有什么偏见、以及分析者是否接受批评。</li>
+</ul>
 
       
     </div>
@@ -398,8 +524,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/12/有效解决问题的提问方法/" rel="next" title="有效解决问题的提问方法">
-                <i class="fa fa-chevron-left"></i> 有效解决问题的提问方法
+              <a href="/2018/04/25/个人总结_世界观/" rel="next" title="World Views">
+                <i class="fa fa-chevron-left"></i> World Views
               </a>
             
           </div>
@@ -408,8 +534,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/15/Android_Tasker/" rel="prev" title="Tasker">
-                Tasker <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/25/个人总结_价值观/" rel="prev" title="Views Of Value">
+                Views Of Value <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -543,7 +669,7 @@
               
             
 
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#测试报告的结构"><span class="nav-number">1.</span> <span class="nav-text">测试报告的结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试报告的内容格式"><span class="nav-number">2.</span> <span class="nav-text">测试报告的内容格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#问题与注意事项"><span class="nav-number">3.</span> <span class="nav-text">问题与注意事项</span></a></li></ol></div>
+            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工作与艺术"><span class="nav-number">1.</span> <span class="nav-text">工作与艺术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#黑盒测试"><span class="nav-number">1.1.</span> <span class="nav-text">黑盒测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据驱动"><span class="nav-number">1.1.1.</span> <span class="nav-text">数据驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中心思想"><span class="nav-number">1.1.2.</span> <span class="nav-text">中心思想</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MVC模型"><span class="nav-number">1.1.3.</span> <span class="nav-text">MVC模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hard-Skills"><span class="nav-number">1.1.4.</span> <span class="nav-text">Hard Skills</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Soft-Skills"><span class="nav-number">1.1.5.</span> <span class="nav-text">Soft Skills</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#项目实战"><span class="nav-number">1.1.6.</span> <span class="nav-text">项目实战</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#讲师作业中心1-4"><span class="nav-number">1.1.6.1.</span> <span class="nav-text">讲师作业中心1.4</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#词汇语法新题型"><span class="nav-number">1.1.6.2.</span> <span class="nav-text">词汇语法新题型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务设计"><span class="nav-number">1.2.</span> <span class="nav-text">服务设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户体验地图和服务蓝图"><span class="nav-number">1.2.1.</span> <span class="nav-text">用户体验地图和服务蓝图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#心理学与生活"><span class="nav-number">2.</span> <span class="nav-text">心理学与生活</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#心理学教我的学习方法"><span class="nav-number">2.1.</span> <span class="nav-text">心理学教我的学习方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#学习策略"><span class="nav-number">2.1.1.</span> <span class="nav-text">学习策略</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习技巧"><span class="nav-number">2.1.2.</span> <span class="nav-text">学习技巧</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#心理学教我的批判思维"><span class="nav-number">2.2.</span> <span class="nav-text">心理学教我的批判思维</span></a></li></ol></li></ol></div>
 
           </div>
         </section>
