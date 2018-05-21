@@ -7,14 +7,16 @@ tags: Windows
 Windows下的多平台自动化工具，增强系统，工作流......
  <!-- more -->
 
- ### IFTTT
- #### 简介
+### IFTTT
+#### 简介
+if this then that
+this=触发器，that=待执行任务
 
- #### 案例
- ##### GoogleCalendar to Evernote
+### Microsoft Flow
+#### 简介
+微软提供的工作流平台，每个月免费提供750条流处理
 
- ### Microsoft Flow
- #### 简介
-
- #### 案例
- ##### Outlook to GoogleCalendar
+#### 案例
+##### Outlook to GoogleCalendar
+  * 目的：同步outlook和google的日历事件
+  * 方法：建立两条工作流，一条从outlook到google，另一条从google到outlook
