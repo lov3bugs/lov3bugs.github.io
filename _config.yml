@@ -5,7 +5,7 @@
 # Site
 title: 江攀
 subtitle: 个人博客
-description: 零落成泥碾作尘，唯有香如故
+description: 
 keywords:
 author: Pan
 language:
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.jiangpan.tech
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,6 +72,8 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+# plugins:
+# - hexo-generator-cname
 ## Themes: https://hexo.io/themes/
 theme: next
 
