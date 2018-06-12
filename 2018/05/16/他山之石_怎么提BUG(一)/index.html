@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="工作," />
+  <meta name="keywords" content="他山之石," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="测试报告的结构、内容和注意事项">
-<meta name="keywords" content="工作">
+<meta name="description" content="Bug report的10个技巧">
+<meta name="keywords" content="他山之石">
 <meta property="og:type" content="article">
-<meta property="og:title" content="怎么写测试报告？">
-<meta property="og:url" content="http://www.jiangpan.tech/2018/05/14/工作_测试报告/index.html">
+<meta property="og:title" content="怎么提BUG？">
+<meta property="og:url" content="http://www.jiangpan.tech/2018/05/16/他山之石_怎么提BUG(一)/index.html">
 <meta property="og:site_name" content="江攀">
-<meta property="og:description" content="测试报告的结构、内容和注意事项">
+<meta property="og:description" content="Bug report的10个技巧">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-12T19:21:20.430Z">
+<meta property="og:updated_time" content="2018-06-12T19:21:20.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="怎么写测试报告？">
-<meta name="twitter:description" content="测试报告的结构、内容和注意事项">
+<meta name="twitter:title" content="怎么提BUG？">
+<meta name="twitter:description" content="Bug report的10个技巧">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://www.jiangpan.tech/2018/05/14/工作_测试报告/"/>
+  <link rel="canonical" href="http://www.jiangpan.tech/2018/05/16/他山之石_怎么提BUG(一)/"/>
 
 
 
 
 
-  <title>怎么写测试报告？ | 江攀</title>
+  <title>怎么提BUG？ | 江攀</title>
   
 
 
@@ -279,7 +279,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.jiangpan.tech/2018/05/14/工作_测试报告/">
+    <link itemprop="mainEntityOfPage" href="http://www.jiangpan.tech/2018/05/16/他山之石_怎么提BUG(一)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Pan">
@@ -296,7 +296,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">怎么写测试报告？</h1>
+          <h1 class="post-title" itemprop="name headline">怎么提BUG？</h1>
         
 
         <div class="post-meta">
@@ -308,8 +308,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-14T00:00:00+08:00">
-                2018-05-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-16T00:00:00+08:00">
+                2018-05-16
               </time>
             
 
@@ -358,48 +358,33 @@
       
 
       
-        <p>测试报告的结构、内容和注意事项<br> <a id="more"></a></p>
-<h4 id="测试报告的结构"><a href="#测试报告的结构" class="headerlink" title="测试报告的结构"></a>测试报告的结构</h4><ol>
-<li>首页</li>
-<li>引言（目的、背景、参考文档）</li>
-<li>测试概要（方法、范围、环境、工具）</li>
-<li>测试结果和缺陷分析</li>
-<li>测试结论与建议</li>
-<li>附录（缺陷统计）</li>
-</ol>
-<h4 id="测试报告的内容格式"><a href="#测试报告的内容格式" class="headerlink" title="测试报告的内容格式"></a>测试报告的内容格式</h4><ol>
-<li>首页：名称、日期、版本</li>
-<li>引言：项目背景、简介、参考资料</li>
-<li>测试概要<ul>
-<li>测试方法/工具（黑盒测试）</li>
-<li>测试范围、测试用例设计（重要测试部分一定要保证有两种以上不同的用例设计方法）<ul>
-<li>测试环境：服务器配置、客户端配置、操作系统、网络等</li>
-</ul>
+        <p>Bug report的10个技巧<br> <a id="more"></a></p>
+<ol>
+<li><p>组织Structure：<br> 测试人员应该采用深思熟虑的，小心谨慎的方法执行测试，并且做详尽的记录。这样可以促使他们对测试下的系统有很好的认识。当错误发生的时候，一个有组织的测试人员能够知道最早出现问题的地方。</p>
 </li>
-</ul>
+<li><p>重现Reproduce：<br> 测试人员在编写bug report之前必须在检查问题是否可重现。如果错误不可再重现，仍然应该写下来，但是必须说明问题的偶然性。一个好的处理原则就是在编写bug report之前反复尝试3次。</p>
 </li>
-<li>测试结果与缺陷分析（汇总数据以度量测试过程和评估软件质量）<ul>
-<li>测试执行情况与记录（成本）：测试人员、测试时间、测试版本</li>
-<li>需求覆盖率和测试覆盖率</li>
-<li>缺陷的统计与分析：</li>
-<li>统计：严重程度、功能分布、缺陷类型</li>
-<li>分析：缺陷发现效率、用例质量、缺陷密度、重要缺陷摘要</li>
-<li>遗留问题：类型、描述、评价</li>
-</ul>
+<li><p>隔离Isolate：（控制变量以更准确定位原因）<br> 在尝试编写bug report之前，必须试着隔离错误。可以采用改变一些变量的方法，如系统的配置，它可能可以改变错误的症状。这些信息可以为开发人员着手调试提供思路。</p>
 </li>
-<li>测试结论与建议<ul>
-<li>结论：测试执行是否充分、测试目标是否完成、对风险的控制措施和效果</li>
-<li>建议：描述系统存在的问题、后续工作、对缺陷修改和产品的建议、对过程改进的建议</li>
-</ul>
+<li><p>归纳Generalize：<br> 在测试人员发现了一个已隔离的，可重现的问题后，应该对问题进行归纳。同一个问题是否出现在其他的模块或其他的地方？同一个故障是否有更加严重的问题？</p>
 </li>
-<li>附录<ul>
-<li>缺陷列表</li>
-<li>缺陷等级定义标准</li>
-<li>测试通过标准</li>
-</ul>
+<li><p>对比Compare：<br> 如果测试人员以前曾经验证过现在出错的测试用例，那么他就应该检查以前的测试结果以检查相同的条件是否通过以前的测试。如果是的话，那么这个问题就象是一个回归的错误。注意由于同一测试条件有可能出现在多个测试用例中，这个步骤就不仅仅只是检查一个测试用例在以前的多个结果。</p>
+</li>
+<li><p>总结Summarize：<br> 在bug report的第一行写上错误的总结是非常关键的。测试人员要花些时间思考已发现的错误对客户有何影响。这不仅仅要求测试人员编写的报告要能够吸引读者，使和管理层的沟通清晰，还要能够帮助设置错误修复的优先级别。</p>
+</li>
+<li><p>精简Condense：<br> 在bug report的初稿完成后，测试人员应该反复阅读它，集中剔除那些没有关系的步骤或词语。隐含的或模糊的说明和那些由于对没有任何关系的细节或者那些在重现错误过程中不需要的步骤而消磨报告欢迎程度的无穷唠叨都不是bug report的目标。</p>
+</li>
+<li><p>消除歧义Disambiguate：<br> 测试人员在精简空话的同时或其之后随即应该再仔细检查报告是否有会产生误解的地方。测试人员应该尽量避免使用模糊的，会产生歧义的和主观的词语。目标是使用能够表述事实，清楚的，不会产生争执的词语。</p>
+</li>
+<li><p>中立Neutralize：<br> 如文中所述，作为坏消息的传递人，和善地提交消息是一个挑战。如同所有的错误总结一样，独立的bug report在措辞方面应该保持公正。攻击开发人员，指责潜在的错误，企图诙谐或使用挖苦将引起开发人员的憎恶，并且使注意力从“提高产品质量”这个大的目标上转移开了。谨慎的测试人员只用Bug report来描述事实。</p>
+</li>
+<li><p>检查Review：<br>一旦测试人员感觉bug report是他能够编写的最好版本，他应该将报告再给一个或多个同行进行检查。他的同事们也应该给出一些建议，为了澄清问题不断地提问，如果适当的话，甚至可以挑战“错误成灾”的结论。在允许的时间里，测试小组应该尽可能提交最好的bug report。</p>
 </li>
 </ol>
-<h4 id="问题与注意事项"><a href="#问题与注意事项" class="headerlink" title="问题与注意事项"></a>问题与注意事项</h4>
+<ul>
+<li><a href="https://blog.csdn.net/wanglha/article/details/40040127" target="_blank" rel="noopener">参考文档</a></li>
+</ul>
+
       
     </div>
     
@@ -416,7 +401,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/工作/" rel="tag"># 工作</a>
+            <a href="/tags/他山之石/" rel="tag"># 他山之石</a>
           
         </div>
       
@@ -429,8 +414,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/12/他山之石_怎么提问(一)/" rel="next" title="怎么有效地提问？(一)">
-                <i class="fa fa-chevron-left"></i> 怎么有效地提问？(一)
+              <a href="/2018/05/15/Android_Tasker/" rel="next" title="Tasker">
+                <i class="fa fa-chevron-left"></i> Tasker
               </a>
             
           </div>
@@ -439,8 +424,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/15/Windows_工作流/" rel="prev" title="工作流">
-                工作流 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/17/工作_2018一季度技术部总结/" rel="prev" title="关于怎么开展Scrum的阶段性总结">
+                关于怎么开展Scrum的阶段性总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -493,17 +478,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -565,20 +541,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#测试报告的结构"><span class="nav-number">1.</span> <span class="nav-text">测试报告的结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试报告的内容格式"><span class="nav-number">2.</span> <span class="nav-text">测试报告的内容格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#问题与注意事项"><span class="nav-number">3.</span> <span class="nav-text">问题与注意事项</span></a></li></ol></div>
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
