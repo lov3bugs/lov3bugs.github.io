@@ -1,10 +1,11 @@
 ---
-title: 工作流
+title: 自动化工作流
 date: 2018-05-15
 tags: Windows
 ---
 
 Windows下的多平台自动化工具，增强系统，工作流......
+参考资料: [https://sspai.com/post/43016]
  <!-- more -->
 
 ### IFTTT
