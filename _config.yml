@@ -24,8 +24,6 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
-about_dir: about
-search_dir: search
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -91,8 +89,8 @@ deploy:
 menu:
   home: /
   archives: /archives
-  search: /search
-  about: /about
+  # search: /search
+  # about: /about
 
 # Favicon
 favicon: /favicon.ico
