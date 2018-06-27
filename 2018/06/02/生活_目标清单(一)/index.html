@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="江攀">
 <meta property="og:description" content="关于约翰的目标单，这是一个少年人天马行空的浪漫计划，甚至略显凌乱。很多人少年时候都像海绵一样，贪婪地吸收各种知识，想想你念中学的时候读过多少世界名著. 是否也为《奥秘》之类的杂志着迷？而长大以后，眼界反而狭窄了。我问过一位35岁的朋友有什么人生计划，她想了半天回答说：一定要列举出来的话也有一些，不过不超过10个计划。看完约翰的计划之后或许对你有很大的启发">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-27T14:26:31.595Z">
+<meta property="og:updated_time" content="2018-06-27T14:32:30.894Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="约翰的人生目标清单">
 <meta name="twitter:description" content="关于约翰的目标单，这是一个少年人天马行空的浪漫计划，甚至略显凌乱。很多人少年时候都像海绵一样，贪婪地吸收各种知识，想想你念中学的时候读过多少世界名著. 是否也为《奥秘》之类的杂志着迷？而长大以后，眼界反而狭窄了。我问过一位35岁的朋友有什么人生计划，她想了半天回答说：一定要列举出来的话也有一些，不过不超过10个计划。看完约翰的计划之后或许对你有很大的启发">
@@ -102,7 +102,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -189,6 +189,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
           </a>
         </li>
       
@@ -314,19 +324,7 @@
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Post modified&#58;</span>
-              
-              <time title="Post modified" itemprop="dateModified" datetime="2018-06-27T22:26:31+08:00">
-                2018-06-27
-              </time>
             
           </span>
 
@@ -728,6 +726,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

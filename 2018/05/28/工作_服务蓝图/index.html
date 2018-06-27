@@ -90,7 +90,7 @@
 <meta property="og:description" content="服务蓝图试图描述那些支撑商业社会的，复杂而简单的服务系统。当你手中只有一把锤子的时候，周围的问题对你来说都是等待敲平的钉子，因为锤子是你手中唯一的工具。同样的，如果你手中只有服务蓝图这个工具时，服务历程中的一切事物不过是尚待厘清的细节，然而这些细节对你的最终设计目标未必有所帮助。与服务蓝图常常一起出现的是用户体验地图，我们的问题是弄清楚什么场景使用哪一个工具。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://media.nngroup.com/media/editor/2017/08/22/nng-service-blueprint-example.png">
-<meta property="og:updated_time" content="2018-06-27T14:26:31.591Z">
+<meta property="og:updated_time" content="2018-06-27T14:32:30.890Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="服务蓝图可以做什么？怎么画服务蓝图？">
 <meta name="twitter:description" content="服务蓝图试图描述那些支撑商业社会的，复杂而简单的服务系统。当你手中只有一把锤子的时候，周围的问题对你来说都是等待敲平的钉子，因为锤子是你手中唯一的工具。同样的，如果你手中只有服务蓝图这个工具时，服务历程中的一切事物不过是尚待厘清的细节，然而这些细节对你的最终设计目标未必有所帮助。与服务蓝图常常一起出现的是用户体验地图，我们的问题是弄清楚什么场景使用哪一个工具。">
@@ -104,7 +104,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -191,6 +191,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
           </a>
         </li>
       
@@ -316,19 +326,7 @@
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Post modified&#58;</span>
-              
-              <time title="Post modified" itemprop="dateModified" datetime="2018-06-27T22:26:31+08:00">
-                2018-06-27
-              </time>
             
           </span>
 
@@ -564,6 +562,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
