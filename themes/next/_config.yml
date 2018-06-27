@@ -99,7 +99,7 @@ menu:
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -506,7 +506,7 @@ facebook_sdk:
 # This plugin depends on Facebook SDK.
 # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
 facebook_comments_plugin:
-  enable:       false
+  enable:       true
   num_of_posts: 10    # min posts num is 1
   width:        100%  # default width is 550px
   scheme:       light # default scheme is light (light or dark)
@@ -607,7 +607,7 @@ local_search:
   enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
-  trigger: auto
+  trigger: manual
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
 
