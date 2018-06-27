@@ -90,6 +90,7 @@ deploy:
 menu:
   home: /
   archives: /archives
+  search: /search
 
 # Favicon
 favicon: /favicon.ico
