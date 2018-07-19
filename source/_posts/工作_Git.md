@@ -83,3 +83,21 @@ git merge master // 切换到jiangpan之后, 合并master分支到当前分支
 git checkout master // 首先切换到master分支
 git merge jiangpan // 切换到master之后, 合并jiangpan分支到当前分支,即master
 ```
+
+# 图形化工具Gitkraken
+
+## 克隆远程仓库
+
+![](https://images2017.cnblogs.com/blog/886183/201711/886183-20171115205614546-519985779.gif)
+
+## 切换至dev分支
+
+![](https://images2017.cnblogs.com/blog/886183/201711/886183-20171115205812906-735356286.gif)
+
+## 提交至自己的dev分支
+
+![](https://images2017.cnblogs.com/blog/886183/201711/886183-20171115205929546-940928059.gif)
+
+## 更新远程仓库的代码到本地仓库（fetch），然后将内容合并到当前分支（merge）
+
+![](https://images2017.cnblogs.com/blog/886183/201711/886183-20171115205943812-1402804833.gif)
