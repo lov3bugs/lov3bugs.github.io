@@ -60,7 +60,9 @@ git pull
 
 比如修改并提交到jiangpan分支
 ```
+git pull // 拉取远程仓库
 git checkout jiangpan // 首先切换到jiangpan分支
+git status // 查看本地工作区的状态, 当前分支和是否有修改
 git add . // 添加本地所有修改到缓存区, 每次修改完都要重新add
 git commit -m "修改备注信息" // 提交缓存的修改到版本库
 git push // 提交到远程仓库
